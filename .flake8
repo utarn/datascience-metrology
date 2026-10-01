@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 79
+# E203 conflicts with the black/ruff-format slicing style
+extend-ignore = E203
+exclude = .venv, __pycache__, .ipynb_checkpoints
