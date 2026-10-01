@@ -67,8 +67,9 @@ d = json.load(open('/tmp/rice.json'))['result']
 pd.DataFrame(d['records']).to_csv('datasets/rice_price_105/rice105_monthly.csv', index=False)
 EOF
 
-# PCD legacy dirty-file drill, ปี 2554, TIS-620 encoding (Open Data Common)
-curl -sSL -o datasets/pcd_pm25_legacy/aqpm2.5bangkokmetropolitanregion2554.csv \
-  "https://pcd.gdcatalog.go.th/download/aqpm2.5bangkokmetropolitanregion2554.csv"
+# PCD legacy dirty-file drill, ปี 2556, TIS-620 encoding (Open Data Common)
+# NOTE: ใช้ resource path เต็ม — URL แบบย่อ /download/... ได้หน้า 404 HTML (ดู research doc correction)
+curl -sSL -o datasets/pcd_pm25_legacy/aqpm2.5bangkokmetropolitanregion2556.csv \
+  "https://pcd.gdcatalog.go.th/dataset/78495048-ce78-4b53-b6b9-63610fc9e841/resource/f166a354-724a-4a9a-bc50-7df0ad50a4a8/download/aqpm2.5bangkokmetropolitanregion2556.csv"
 
 echo "done — see datasets/README.md for licenses and citations"
