@@ -15,7 +15,7 @@ Citations must be repeated in the first markdown cell of every notebook that use
 | `palmer_penguins/` | M4, M5 | Palmer Penguins — Gorman, Williams & Fraser (2014), PLoS ONE 9(3):e90081 (package: Horst et al. 2020, doi:10.5281/zenodo.3960218) | CC0-1.0 |
 | `gapminder/` | M5 | Gapminder Foundation — Life expectancy, GDP per capita & population (excerpt 1952–2007), https://www.gapminder.org/free-material/ | CC BY 4.0 |
 | `rice_price_105/` | M4/M5 (โบนัสไทย) | ราคาข้าวเปลือกหอมมะลิ 105 รายเดือน — สำนักงานเศรษฐกิจการเกษตร, data.go.th (datastore resource `d9f8ed5c-6072-4ac0-a717-a30850216a39`) | Open Data Common |
-| `pcd_pm25_legacy/` | M3 (แบบฝึกไฟล์สกปรก: TIS-620) | PCD ข้อมูล PM2.5 กทม. ปี 2554 — pcd.gdcatalog.go.th | Open Data Common |
+| `pcd_pm25_legacy/` | M3 (แบบฝึกไฟล์สกปรก: TIS-620) | PCD ข้อมูล PM2.5 กทม. ปี 2556 — pcd.gdcatalog.go.th (resource `d15285e8…` ของ dataset 12_02_aaq_pm2-5_bkk_metro — URL แบบย่อ `/download/…` **ห้ามใช้** ได้หน้า 404 HTML) | Open Data Common |
 
 **รวม ~7.8 MB — ทุกโน้ตบุ๊กรัน offline ได้**
 

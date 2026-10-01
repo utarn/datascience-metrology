@@ -48,7 +48,8 @@
 - **Limits:** no formal license field is the weakest point of the three; keep as an optional extra, not a primary.
 
 ### Thai "dirty file" drill (small, not analysis material)
-- The PCD yearly air-quality files (พ.ศ. 2554–2567) on pcd.gdcatalog.go.th are genuinely dirty: e.g. `.../download/aqpm2.5bangkokmetropolitanregion2554.csv` → HTTP 200, 10,740 bytes, 368 rows, **TIS-620 encoding** (fails UTF-8 decode), pivot-style header, `M/D/YYYY` dates, sparse values, and a `หมายเหตุ` footer row. License stated "Open Data Common". Great as a 15-minute decoding/cleaning drill, too thin for real analysis.
+- The PCD yearly air-quality files (พ.ศ. 2554–2567) on pcd.gdcatalog.go.th are genuinely dirty: pivot-style header, `M/D/YYYY` dates, sparse values, and a `หมายเหตุ` footer row. License stated "Open Data Common". Great as a 15-minute decoding/cleaning drill, too thin for real analysis.
+- **⚠️ CORRECTION (2026-10-01, during M3 prototype):** the original verification of this section was wrong — the URL `https://pcd.gdcatalog.go.th/download/aqpm2.5bangkokmetropolitanregion2554.csv` (bare `/download/` path) returns a **CKAN 404 HTML page in UTF-8**, and the "368 rows / TIS-620 confirmed" reading was that HTML page misread through TIS-620 (mojibake). The real CSVs live under the dataset's resource path — e.g. year 2556: `https://pcd.gdcatalog.go.th/dataset/78495048-ce78-4b53-b6b9-63610fc9e841/resource/f166a354-724a-4a9a-bc50-7df0ad50a4a8/download/aqpm2.5bangkokmetropolitanregion2556.csv` (verified: 367×16, TIS-620 strict decodes clean, footer row present, ~351 non-null values — sparse). Add the bare `/download/` path to the do-not-cite flags below. The committed file is the 2556 one (most data of 2554–2556: 216/331/351 non-null).
 
 **Recommendation:** **UCI Adult** as the primary cleaning dataset (clean license, canonical, dirt exactly at beginner level) with **Coffee Quality Database** as the richer second exercise; NYC 311 only as an optional relatable slice with the license caveat spelled out.
 
@@ -226,7 +227,7 @@ NIST-style note: NOAA CO₂ is a U.S. Government product — free use with requi
 | UCI Adult page | license + DOI | CC BY 4.0; DOI 10.24432/C5XW20 |
 | Coffee `arabica_data_cleaned.csv` (raw GitHub) | HTTP GET + column nulls | 200; 649,689 B; 1,311 × 44; null counts verified (Lot.Number 1,041 etc.); repo LICENSE = MIT (© 2018 James LeDoux) |
 | NYC 311 Socrata CSV (`erm2-nwe9.csv?$limit=10000`) | HTTP GET | 200; 7,818,070 B; 10,000 × 41; license field "unspecified"; ids `6n2h-v6fc` / `erf7-j8jm` / `6n2h-vubu` all 404 — do not cite |
-| PCD legacy `aqpm2.5bangkokmetropolitanregion2554.csv` | HTTP GET + decode test | 200; 10,740 B; 368 rows; TIS-620 encoding confirmed |
+| PCD legacy yearly files | HTTP GET + decode test | **corrected 2026-10-01** — see ⚠️ note in Category 1; bare `/download/` URL = 404 HTML page (do-not-cite); real resource-path URL verified (2556: 367×16 TIS-620) |
 | NOAA `co2_mm_gl.csv` | HTTP GET + line count | 200; 24,723 B; 571 data rows + 38-line header; credit policy + Version/DOI confirmed on gl_data.html (Lan, Tans & Thoning) |
 | Rdatasets `AirPassengers.csv` | HTTP GET | 200; 3,032 B; 144 data rows; statsmodels airpassengers URL 404 — do not cite |
 | seaborn-data `flights.csv` | HTTP GET + repo license check | 200; 2,350 B; 143 rows; repo has no license (GitHub API) |
