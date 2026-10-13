@@ -6,14 +6,14 @@ Citations must be repeated in the first markdown cell of every notebook that use
 
 | File | Used in | Source | License |
 |---|---|---|---|
-| `adult/` | M2, M3 | UCI Adult (income) — Kohavi & Becker (1996), UCI ML Repository, DOI 10.24432/C5XW20 — https://archive.ics.uci.edu/dataset/2/adult | CC BY 4.0 |
-| `coffee_quality/` | M3 | Coffee Quality Database — LeDoux, J. (2018), https://github.com/jldbc/coffee-quality-database (data © Coffee Quality Institute) | MIT (repo) — ให้เครดิต CQI ด้วย |
+| `adult/` | M3 | UCI Adult (income) — Kohavi & Becker (1996), UCI ML Repository, DOI 10.24432/C5XW20 — https://archive.ics.uci.edu/dataset/2/adult | CC BY 4.0 |
+| `coffee_quality/` | M2, M3 | Coffee Quality Database — LeDoux, J. (2018), https://github.com/jldbc/coffee-quality-database (data © Coffee Quality Institute) | MIT (repo) — ให้เครดิต CQI ด้วย |
 | `noaa_co2/` | M6 | NOAA GML globally-averaged CO₂ monthly — Lan, X., Tans, P. & Thoning, K.W. (2026), Version 2026-09, DOI 10.15138/9N0H-ZH07 — https://gml.noaa.gov/ccgg/trends/gl_data.html | ใช้ฟรี **ต้องใส่เครดิต** (US Government product) |
 | `air_passengers/` | M6 | AirPassengers (Box & Jenkins 1976 classic) — ไฟล์ผ่าน Rdatasets, https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/AirPassengers.csv | แจกต่อได้ตามธรรมเนียมของ Rdatasets — อ้าง Box & Jenkins (1976) |
 | `pcd_pm25_2025/` | M3, M6 | PCD Air4Thai PM2.5 รายวัน ปี 2568 — กรมควบคุมมลพิษ, pcd.gdcatalog.go.th | Open Data Common |
 | `tourist_arrivals/` | M6 (climax กับดัก extrapolation) | International Tourist Arrivals to Thailand — สำนักงานปลัดกระทรวงการท่องเที่ยวและกีฬา, data.go.th | Creative Commons Attribution |
 | `palmer_penguins/` | M4, M5 | Palmer Penguins — Gorman, Williams & Fraser (2014), PLoS ONE 9(3):e90081 (package: Horst et al. 2020, doi:10.5281/zenodo.3960218) | CC0-1.0 |
-| `gapminder/` | M5 | Gapminder Foundation — Life expectancy, GDP per capita & population (excerpt 1952–2007), https://www.gapminder.org/free-material/ | CC BY 4.0 |
+| `gapminder/` | M2, M5 | Gapminder Foundation — Life expectancy, GDP per capita & population (excerpt 1952–2007), https://www.gapminder.org/free-material/ | CC BY 4.0 |
 | `rice_price_105/` | M4/M5 (โบนัสไทย) | ราคาข้าวเปลือกหอมมะลิ 105 รายเดือน — สำนักงานเศรษฐกิจการเกษตร, data.go.th (datastore resource `d9f8ed5c-6072-4ac0-a717-a30850216a39`) | Open Data Common |
 | `pcd_pm25_legacy/` | M3 (แบบฝึกไฟล์สกปรก: TIS-620) | PCD ข้อมูล PM2.5 กทม. ปี 2556 — pcd.gdcatalog.go.th (resource `d15285e8…` ของ dataset 12_02_aaq_pm2-5_bkk_metro — URL แบบย่อ `/download/…` **ห้ามใช้** ได้หน้า 404 HTML) | Open Data Common |
 
