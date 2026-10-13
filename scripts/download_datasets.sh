@@ -72,4 +72,8 @@ EOF
 curl -sSL -o datasets/pcd_pm25_legacy/aqpm2.5bangkokmetropolitanregion2556.csv \
   "https://pcd.gdcatalog.go.th/dataset/78495048-ce78-4b53-b6b9-63610fc9e841/resource/f166a354-724a-4a9a-bc50-7df0ad50a4a8/download/aqpm2.5bangkokmetropolitanregion2556.csv"
 
+# Anscombe's quartet (Anscombe 1973, The American Statistician 27(1):17–21,
+# DOI 10.1080/00031305.1973.10478966) — committed directly in datasets/anscombe/,
+# NO download entry: canonical 44-point table typed from the paper, not scraped.
+
 echo "done — see datasets/README.md for licenses and citations"
