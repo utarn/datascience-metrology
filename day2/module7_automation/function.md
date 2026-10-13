@@ -125,5 +125,46 @@ one["station"] = path.stem.removeprefix("station_")
 
 ---
 
-*หมายเหตุ: ภาพทั้ง 5 ยังไม่ถูกสร้าง — ผู้จัดทำสื่อใช้ prompt ข้างบนสร้างภาพ
+## กลุ่มที่ 6 — สหสัมพรรค์: `.cov()` + `.var()` (จากแบบฝึกปิดท้าย)
+
+| ฟังก์ชัน | ทำอะไร |
+|---|---|
+| `x.cov(y)` | ความแปรปรวนร่วมของ x กับ y — x กับ y "เคลื่อนไปด้วยกัน" มากแค่ไหน |
+| `x.var()` | ความแปรปรวน (variance) ของคอลัมน์ — คู่ของ `.std()` จาก M5 (std = รากที่สองของ var) |
+
+```python
+slope = x.cov(y) / x.var()             # ความชันของเส้น trend
+r = x.cov(y) / (x.std() * y.std())     # สหสัมพรรค์พีร์สัน → R² = r ** 2
+```
+
+**ภาพ:** `figures/m7-g6-cov-var.png`
+
+> Prompt: `Flat instructional diagram, white background. Two small scatter
+> plots side by side, each with its dots hugging (left, labeled cov) or
+> spread around (right, labeled var) a faint trend line; below them a
+> single equation card showing "slope = cov / var" and "R2 = r squared".
+> Thai caption "ความชันจาก cov หาร var". Minimal, rounded rectangles, no
+> photorealism.`
+
+---
+
+## ทบทวนทั้งหลักสูตร — แบบฝึกปิดท้ายเป็นแผนที่ (recap map M1–M7)
+
+ส่วนที่ 5 ของ `exercise.ipynb` (แบบฝึกปิดท้าย 30 นาที) ใช้ทักษะจากเกือบทุก
+โมดูลในงานเดียว ตารางนี้คือ**แผนที่ย้อนกลับ** — แต่ละขั้นใช้ฟังก์ชันกลุ่ม
+ไหนจากโมดูลไหน (กลุ่มที่ลืม ย้อนไปเปิด `function.md` ของโมดูลนั้น)
+
+> **กฎของส่วนนี้:** ไม่มีภาพประกอบใหม่ — ใช้ภาพเดิมใน `figures/` ของ
+> โมดูลต้นแบบแต่ละกลุ่ม
+
+| ขั้นของแบบฝึกปิดท้าย | ใช้ฟังก์ชันกลุ่มจาก | คำใบ้เร็ว |
+|---|---|---|
+| **1 — โหลดข้อมูล** | M1 ก8 (Path) · M2 ก1/ก2 (`read_csv` · `.head()`/`.shape`/`.info()`) | ตาราง wide ตามต้นฉบับ — 11 แถว × 8 คอลัมน์ = 44 จุด |
+| **2 — ระวาง 4 แผง** | M4 ก1/ก5/ก6 (scatter · ป้ายแกน · `plt.subplots(2, 2)`) · M4 ก2 (for สองตัวแปร วนคู่ i + แผง) · M6 ก2 (`np.polyfit` เส้น trend) | จุด scatter + เส้นตรงจากจุดปลาย x ซ้าย–ขวา ต่อคู่ |
+| **3 — ตารางสถิติสรุป** | M5 ก2 (mean) · M5 ก3 (`.std()`) · กลุ่มที่ 6 ข้างบน (`.cov()`/`.var()`) · M1 (ยกกำลัง `**`) | slope = cov ÷ var · R² = r² — ตรวจเองกับค่าที่ต้นฉบับพิมพ์ (x̄ = 9.0 · ȳ = 7.5 · slope 0.5 · R² = 0.667) |
+| **ฐานภาษาที่ใช้ข้ามทุกขั้น (M1):** | ก3/ก4/ก6 (f-string · `list`/`dict` · `for`) | ชื่อคอลัมน์ต่อจากเลขคู่: `f"x{i}"` |
+
+---
+
+*หมายเหตุ: ภาพทั้ง 6 ยังไม่ถูกสร้าง — ผู้จัดทำสื่อใช้ prompt ข้างบนสร้างภาพ
 แล้ววางไฟล์ตามชื่อที่ระบุใน `figures/` ของโมดูลนี้*
