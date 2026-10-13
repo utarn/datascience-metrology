@@ -6,7 +6,7 @@ Citations must be repeated in the first markdown cell of every notebook that use
 
 | File | Used in | Source | License |
 |---|---|---|---|
-| `adult/` | M3 | UCI Adult (income) — Kohavi & Becker (1996), UCI ML Repository, DOI 10.24432/C5XW20 — https://archive.ics.uci.edu/dataset/2/adult | CC BY 4.0 |
+| `adult/` | M3 | UCI Adult (income) — Becker, B. & Kohavi, R. (1996), UCI ML Repository, DOI 10.24432/C5XW20 — https://archive.ics.uci.edu/dataset/2/adult | CC BY 4.0 |
 | `coffee_quality/` | M2, M3 | Coffee Quality Database — LeDoux, J. (2018), https://github.com/jldbc/coffee-quality-database (data © Coffee Quality Institute) | MIT (repo) — ให้เครดิต CQI ด้วย |
 | `noaa_co2/` | M6 | NOAA GML globally-averaged CO₂ monthly — Lan, X., Tans, P. & Thoning, K.W. (2026), Version 2026-09, DOI 10.15138/9N0H-ZH07 — https://gml.noaa.gov/ccgg/trends/gl_data.html | ใช้ฟรี **ต้องใส่เครดิต** (US Government product) |
 | `air_passengers/` | M6 | AirPassengers (Box & Jenkins 1976 classic) — ไฟล์ผ่าน Rdatasets, https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/AirPassengers.csv | แจกต่อได้ตามธรรมเนียมของ Rdatasets — อ้าง Box & Jenkins (1976) |
@@ -16,6 +16,7 @@ Citations must be repeated in the first markdown cell of every notebook that use
 | `gapminder/` | M2, M5 | Gapminder Foundation — Life expectancy, GDP per capita & population (excerpt 1952–2007), https://www.gapminder.org/free-material/ | CC BY 4.0 |
 | `rice_price_105/` | M4/M5 (โบนัสไทย) | ราคาข้าวเปลือกหอมมะลิ 105 รายเดือน — สำนักงานเศรษฐกิจการเกษตร, data.go.th (datastore resource `d9f8ed5c-6072-4ac0-a717-a30850216a39`) | Open Data Common |
 | `pcd_pm25_legacy/` | M3 (แบบฝึกไฟล์สกปรก: TIS-620) | PCD ข้อมูล PM2.5 กทม. ปี 2556 — pcd.gdcatalog.go.th (resource `d15285e8…` ของ dataset 12_02_aaq_pm2-5_bkk_metro — URL แบบย่อ `/download/…` **ห้ามใช้** ได้หน้า 404 HTML) | Open Data Common |
+| `anscombe/` | M7 (แบบฝึกปิดท้าย reproduce-a-figure) + M1 (ตัวอย่างตารางเล็ก) | Anscombe's quartet — Anscombe, F. J. (1973). *The American Statistician* 27(1):17–21, DOI 10.1080/00031305.1973.10478966 | อ้าง Anscombe (1973) เป็นหลัก — แจกจ่ายตามธรรมเนียมเช่นเดียวกับ Rdatasets/seaborn |
 
 **รวม ~7.8 MB — ทุกโน้ตบุ๊กรัน offline ได้**
 
@@ -28,6 +29,7 @@ Citations must be repeated in the first markdown cell of every notebook that use
 
 ## Notes
 
+- `anscombe/anscombe_quartet.csv` คือตาราง wide ตามต้นฉบับ (11 แถว × 8 คอลัมน์ `x1–x4, y1–y4` = 44 จุดข้อมูล 4 คู่) — commit ตรง ๆ **ไม่ผ่าน seaborn** (seaborn อยู่นอก pandas stack) และไม่มีรายการดาวน์โหลดใน `scripts/download_datasets.sh`; สถิติสรุปของทั้ง 4 คู่เหมือนกันตาม paper (mean x = 9.0, mean y ≈ 7.50, slope ≈ 0.5, R² ≈ 0.667) แต่รูปร่างต่างกัน — สื่อการสอนว่า "อย่าเชื่อแค่ตัวเลข ต้องดูกราฟ"
 - `pcd_pm25_2025/pm25_daily_2025_15stations.csv` คือ **extract 15 สถานี** (กทม. 12 + เชียงใหม่ 2 + หาดใหญ่ 1, 365 วัน, 5,475 rows) จากไฟล์เต็ม 8.5 MB (105 สถานี) — ไฟล์เต็ม**ไม่ commit** ดึงใหม่ได้ด้วย `scripts/download_datasets.sh` (ตัวกรอง: `station_code ∈ {02T,03T,05T,10T,11T,12T,50T,52T,53T,54T,59T,61T,35T,36T,44T}`)
 - `tourist_arrivals/` เก็บทั้ง JSON ดิบ (ตามแหล่ง) และ CSV แปลงแล้ว — รวมทุกประเทศ: 29.9M (2015) → 39.2M (2019) → **7.3M (2020)** → 6.5M (2023; ปีสุดท้ายดูสมบูรณ์ไม่เต็ม เทียบตัวเลขทางการ ~28M — ใส่ caveat บนสไลด์)
 - `noaa_co2/co2_mm_gl.csv` มี comment header 38 บรรทัด — อ่านด้วย `pd.read_csv(..., skiprows=38)`

@@ -145,6 +145,18 @@ Every notebook displays, in its first markdown cell, the dataset name, source UR
   doi    = {10.24432/C5XW20}
 }
 
+@article{anscombe1973,
+  author = {Anscombe, Francis J.},
+  title  = {Graphs in Statistical Analysis},
+  journal = {The American Statistician},
+  volume = {27},
+  number = {1},
+  pages  = {17--21},
+  year   = {1973},
+  doi    = {10.1080/00031305.1973.10478966},
+  note   = {Source of Anscombe's quartet (4 pairs x/y, 11 observations each = 44 points); committed CSV in \texttt{datasets/anscombe/}, used in module7\_automation (closing reproduce-a-figure drill) and as a small-table example in module1\_python\_primer}
+}
+
 @misc{ledoux2018coffee,
   author = {LeDoux, James},
   title  = {coffee-quality-database: Digitizing 1,340 coffee reviews},
