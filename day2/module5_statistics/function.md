@@ -1,19 +1,19 @@
-# function.md — Module M4: ฟังก์ชันที่ใช้ในโมดูลนี้ (เฉพาะฟังก์ชันใหม่)
+# function.md — Module M5: ฟังก์ชันที่ใช้ในโมดูลนี้ (เฉพาะฟังก์ชันใหม่)
 
 ไว้เปิดคู่กับ `book.ipynb` ขณะทำ `exercise.ipynb` — จัดกลุ่มกลุ่มละ 1–3 ฟังก์ชัน
 พร้อม prompt สำหรับสร้างภาพประกอบ (ภาพอยู่ที่ `figures/` ของโมดูล)
 
 > **กฎของไฟล์นี้:** ระบุเฉพาะฟังก์ชันที่**เพิ่งเจอครั้งแรกในโมดูลนี้** —
-> ฟังก์ชันที่ M1–M3 สอนไปแล้วไม่ซ้ำที่นี่ ผู้เรียนต้องจำจากโมดูลก่อนหน้าให้ได้
+> ฟังก์ชันที่ M1–M4 สอนไปแล้วไม่ซ้ำที่นี่ ผู้เรียนต้องจำจากโมดูลก่อนหน้าให้ได้
 > (ถ้าลืม ย้อนไปดู `function.md` ของโมดูลนั้น)
 
-**สมมติว่าจำได้จาก M1–M3 แล้ว (ใช้ใน book แต่ไม่อธิบายซ้ำ):**
+**สมมติว่าจำได้จาก M1–M4 แล้ว (ใช้ใน book แต่ไม่อธิบายซ้ำ):**
 `pd.read_csv()` · `.head()` · `.shape` · เลือกคอลัมน์ `df["col"]` ·
 กรองด้วยเงื่อนไข boolean · `.sort_values()` · `.groupby().agg()` (mean/size/
 max/min/sum) · f-string · `pathlib.Path` · `np.nan` + `.replace()` ·
 `.isna()` · `.dropna(subset=...)` · `.fillna()` · `.value_counts()` ·
 `pd.to_datetime()` · `plt.subplots()` + `.plot.barh()` + `plt.show()` +
-`ax.set_title()`
+`ax.set_title()` · `alpha` + `ax.legend()` (จากกราฟ M4)
 
 ---
 
@@ -27,7 +27,7 @@ max/min/sum) · f-string · `pathlib.Path` · `np.nan` + `.replace()` ·
 penguins["body_mass_g"].describe()
 ```
 
-**ภาพ:** `figures/m4-g1-describe.png`
+**ภาพ:** `figures/m5-g1-describe.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a tall
 > spreadsheet column of 12 numeric values. Arrow right labeled "describe()".
@@ -50,7 +50,7 @@ sal = pd.Series([25_000, 30_000, 250_000])
 print(f"mean = {sal.mean():,.0f}, median = {sal.median():,.0f}")
 ```
 
-**ภาพ:** `figures/m4-g2-median.png`
+**ภาพ:** `figures/m5-g2-median.png`
 
 > Prompt: `Flat instructional diagram, white background. Seven vertical bars
 > of people standing in a line by salary height, six similar medium heights
@@ -75,7 +75,7 @@ q1, q3 = mass.quantile([0.25, 0.75])
 iqr = q3 - q1   # ช่วงกลาง 50% ของข้อมูล
 ```
 
-**ภาพ:** `figures/m4-g3-iqr.png`
+**ภาพ:** `figures/m5-g3-iqr.png`
 
 > Prompt: `Flat instructional diagram, white background. A horizontal number
 > line with 12 dots spread across it, the middle 50% of dots inside a
@@ -96,7 +96,7 @@ iqr = q3 - q1   # ช่วงกลาง 50% ของข้อมูล
 penguins.loc[penguins["sex"] == "male", "body_mass_g"]
 ```
 
-**ภาพ:** `figures/m4-g4-loc.png`
+**ภาพ:** `figures/m5-g4-loc.png`
 
 > Prompt: `Flat instructional diagram, white background. A 6x4 spreadsheet,
 > two rows tinted light blue (matching a condition). Two arrows from the
@@ -107,13 +107,11 @@ penguins.loc[penguins["sex"] == "male", "body_mass_g"]
 
 ---
 
-## กลุ่มที่ 5 — รูปทรงข้อมูล: `.plot.hist()` + `alpha` + `.legend()`
+## กลุ่มที่ 5 — รูปทรงข้อมูล: `.plot.hist()`
 
 | ฟังก์ชัน | ทำอะไร |
 |---|---|
 | `.plot.hist(bins=n, ax=...)` | วาด histogram — แบ่งค่าเป็น n ถัง นับจำนวนต่อถัง |
-| `alpha=0.55` | ความทึบ 0–1 — วาดซ้อนสองชุดให้เห็นทั้งคู่ |
-| `ax.legend()` | แสดงคำอธิบายสี/ชื่อชุดข้อมูลบนกราฟ |
 
 ```python
 fig, ax = plt.subplots(figsize=(7, 3))
@@ -124,7 +122,7 @@ ax.legend()
 plt.show()
 ```
 
-**ภาพ:** `figures/m4-g5-hist.png`
+**ภาพ:** `figures/m5-g5-hist.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a histogram
 > with a clear two-peak shape drawn as connected bars. Arrow right labeled
@@ -148,7 +146,7 @@ penguins.groupby("species").agg(
 )
 ```
 
-**ภาพ:** `figures/m4-g6-agg-names.png`
+**ภาพ:** `figures/m5-g6-agg-names.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a small
 > summary table grouped into three species rows. Arrow right labeled

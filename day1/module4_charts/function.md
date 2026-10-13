@@ -1,16 +1,15 @@
-# function.md — Module M5: ฟังก์ชันที่ใช้ในโมดูลนี้ (เฉพาะฟังก์ชันใหม่)
+# function.md — Module M4: ฟังก์ชันที่ใช้ในโมดูลนี้ (เฉพาะฟังก์ชันใหม่)
 
 ไว้เปิดคู่กับ `book.ipynb` ขณะทำ `exercise.ipynb` — จัดกลุ่มกลุ่มละ 1–3 ฟังก์ชัน
 พร้อม prompt สำหรับสร้างภาพประกอบ (ภาพอยู่ที่ `figures/` ของโมดูล)
 
 > **กฎของไฟล์นี้:** ระบุเฉพาะฟังก์ชันที่**เพิ่งเจอครั้งแรกในโมดูลนี้** —
-> ฟังก์ชันที่ M1–M4 สอนไปแล้วไม่ซ้ำที่นี่ ผู้เรียนต้องจำจากโมดูลก่อนหน้าให้ได้
+> ฟังก์ชันที่ M1–M3 สอนไปแล้วไม่ซ้ำที่นี่ ผู้เรียนต้องจำจากโมดูลก่อนหน้าให้ได้
 > (ถ้าลืม ย้อนไปดู `function.md` ของโมดูลนั้น)
 
-**สมมติว่าจำได้จาก M1–M4 แล้ว (ใช้ใน book แต่ไม่อธิบายซ้ำ):**
-`pd.read_csv()` · `.shape` · เลือกคอลัมน์ · กรอง boolean mask ·
-`.groupby().agg()` · `.plot.hist()` + `alpha` + `ax.legend()` ·
-`ax.set_title()` · `plt.subplots()` + `plt.show()` · `.loc[mask, "col"]` ·
+**สมมติว่าจำได้จาก M1–M3 แล้ว (ใช้ใน book แต่ไม่อธิบายซ้ำ):**
+`pd.read_csv()` · `.shape` · เลือกคอลัมน์ · กรองด้วย boolean mask (`df[mask]`) ·
+`.groupby().agg()` · `ax.set_title()` · `plt.subplots()` + `plt.show()` ·
 `.plot.barh()` · f-string · `pathlib.Path`
 
 ---
@@ -20,13 +19,14 @@
 | ฟังก์ชัน | ทำอะไร |
 |---|---|
 | `ax.scatter(x, y, s=..., alpha=..., color=...)` | วาดจุดกระจาย — ตัวเลข × ตัวเลข ตอบคำถาม "สัมพันธ์กันไหม" · `s` = ขนาดจุด · `alpha` = ความทึบ |
+| `ax.legend()` | แสดงคำอธิบายสี (legend) จาก `label=` ของแต่ละชุดจุด — จำเป็นเมื่อวาดหลายกลุ่มลงแกนเดียว |
 
 ```python
 ax.scatter(penguins["flipper_length_mm"], penguins["body_mass_g"],
            s=18, alpha=0.6, color="#457b9d")
 ```
 
-**ภาพ:** `figures/m5-g1-scatter.png`
+**ภาพ:** `figures/m4-g1-scatter.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a 6x4
 > spreadsheet with two columns highlighted (x column blue, y column coral).
@@ -49,7 +49,7 @@ for species_name, color in colors.items():
     print(species_name, color)
 ```
 
-**ภาพ:** `figures/m5-g2-items.png`
+**ภาพ:** `figures/m4-g2-items.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a small
 > dictionary as two-column table (species name / color swatch), three rows.
@@ -71,7 +71,7 @@ means = penguins.groupby("species")["body_mass_g"].mean()
 means.plot.bar(ax=ax)
 ```
 
-**ภาพ:** `figures/m5-g3-bar.png`
+**ภาพ:** `figures/m4-g3-bar.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a 3-row
 > summary table (group name + mean value). Arrow right labeled "plot.bar()".
@@ -94,7 +94,7 @@ th.plot.line(x="year", y="lifeExp", ax=ax)
 ax.plot(one["year"], one["lifeExp"], label="Japan")
 ```
 
-**ภาพ:** `figures/m5-g4-line.png`
+**ภาพ:** `figures/m4-g4-line.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: a small time
 > table (year rows, value column). Arrow right labeled "plot.line". Right:
@@ -116,7 +116,7 @@ ax.set_xlabel("ความยาวปีก (มม.)")
 ax.set_ylabel("น้ำหนัก (กรัม)")
 ```
 
-**ภาพ:** `figures/m5-g5-labels.png`
+**ภาพ:** `figures/m4-g5-labels.png`
 
 > Prompt: `Flat instructional diagram, white background. A scatter plot in
 > the center with callout arrows pointing to its x-axis label and y-axis
@@ -140,7 +140,7 @@ means.plot.bar(ax=axes[0])
 plt.savefig("my_chart.png", dpi=150, bbox_inches="tight")
 ```
 
-**ภาพ:** `figures/m5-g6-subplots-savefig.png`
+**ภาพ:** `figures/m4-g6-subplots-savefig.png`
 
 > Prompt: `Flat instructional diagram, white background. Left: one wide
 > frame containing two side-by-side chart panels labeled [0] and [1].
