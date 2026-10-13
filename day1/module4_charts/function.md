@@ -9,7 +9,8 @@
 
 **สมมติว่าจำได้จาก M1–M3 แล้ว (ใช้ใน book แต่ไม่อธิบายซ้ำ):**
 `pd.read_csv()` · `.shape` · เลือกคอลัมน์ · กรองด้วย boolean mask (`df[mask]`) ·
-`.groupby().agg()` · `ax.set_title()` · `plt.subplots()` + `plt.show()` ·
+`.groupby().agg()` / `.groupby()["col"].mean()` · `ax.set_title()` ·
+`plt.subplots()` + `plt.show()` ·
 `.plot.barh()` · f-string · `pathlib.Path`
 
 ---
