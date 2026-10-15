@@ -34,6 +34,7 @@ ax.scatter(penguins["flipper_length_mm"], penguins["body_mass_g"],
 > Arrow right labeled "scatter(x, y)". Right: a scatter plot of the same
 > points trending upward to the right, axes labeled. Thai caption "ตัวเลข
 > x ตัวเลข = จุด". Minimal, rounded rectangles, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -58,6 +59,7 @@ for species_name, color in colors.items():
 > Right: three loop iterations shown as three small stacked cards each
 > carrying one name and its color swatch. Thai caption "หนึ่งรอบ = หนึ่งคู่".
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -79,6 +81,7 @@ means.plot.bar(ax=ax)
 > Right: a vertical bar chart with three bars of clearly different heights,
 > y-axis starting at zero, labels under bars. Thai caption "เทียบกลุ่ม =
 > แท่ง". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -102,6 +105,7 @@ ax.plot(one["year"], one["lifeExp"], label="Japan")
 > a line chart with two lines in different colors rising across a year axis,
 > a legend in the corner. Thai caption "เวลา = เส้น". Minimal, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -125,6 +129,7 @@ ax.set_ylabel("น้ำหนัก (กรัม)")
 > parentheses highlighted yellow; a crossed-out version in the corner shows
 > an unlabeled axis with a small warning icon. Thai caption "ไม่มีหน่วย =
 > ไม่มีความหมาย". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -148,6 +153,7 @@ plt.savefig("my_chart.png", dpi=150, bbox_inches="tight")
 > Arrow right labeled "savefig()". Right: the same two-panel figure being
 > exported into a PNG file icon with a down-arrow. Thai caption "ภาพเดียว
 > สองแผง -> ไฟล์เดียว". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

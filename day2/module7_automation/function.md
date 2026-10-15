@@ -34,6 +34,7 @@ pm25["month"] = pm25["date"].dt.month
 > a second faded arrow labeled "dt.year / dt.day" fanning out to ghost
 > columns. Thai caption "วันที่ แตกออกได้". Minimal, rounded rectangles,
 > no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -56,6 +57,7 @@ for code, group in pm25.groupby("station_code"):
 > separate small tables on the right, each tagged with its station code
 > badge. Thai caption "หนึ่งรอบ = หนึ่งกลุ่มครบแถว". Minimal, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -79,6 +81,7 @@ summary.to_csv(outputs / f"station_{code}.csv")
 > into a folder containing three CSV file icons, each with a filename badge
 > showing a different station code. Thai caption "หนึ่งกลุ่ม = หนึ่งไฟล์".
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -101,6 +104,7 @@ for path in sorted(outputs.glob("station_*.csv")):
 > pattern "station_*.csv" selecting only three matching CSV files, sliding
 > out into a numbered queue labeled "sorted". Thai caption "กรองไฟล์ตามชื่อ
 > แล้วเรียงทีละไฟล์". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -122,6 +126,7 @@ one["station"] = path.stem.removeprefix("station_")
 > "station_02T" labeled stem, the suffix ".csv" greyed out, and after an
 > arrow the cleaned badge "02T" highlighted yellow. Thai caption "ชื่อไฟล์
 > ก็คือข้อมูล". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -145,6 +150,7 @@ r = x.cov(y) / (x.std() * y.std())     # สหสัมพรรค์พีร
 > single equation card showing "slope = cov / var" and "R2 = r squared".
 > Thai caption "ความชันจาก cov หาร var". Minimal, rounded rectangles, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

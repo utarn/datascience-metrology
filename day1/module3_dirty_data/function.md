@@ -33,6 +33,7 @@ adult = adult.replace("?", np.nan)   # "?" ทั้งตารางกลา�
 > Right: the same table but the question-mark cells are now empty grey cells
 > labeled "NaN". Soft pastel colors, rounded rectangles, Thai labels above the
 > tables reading "ก่อน" and "หลัง". Clean, minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -57,6 +58,7 @@ adult.isna().mean()    # หายกี่เปอร์เซ็นต์
 > one-row table of counts (e.g. 0, 0, 2, 0), one labeled "isna().mean()"
 > showing percentages (e.g. 0%, 0%, 40%, 0%). Arrows from the table down to
 > each result. Minimal, rounded rectangles, Thai labels, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -78,6 +80,7 @@ adult_drop = adult.dropna(subset=["workclass", "occupation"])
 > right labeled "dropna(subset=[...])". Right: same table with only 4 rows,
 > the kept rows tinted light green. Thai caption "ตัดทิ้ง = เสียข้อมูลบางส่วน".
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -101,6 +104,7 @@ adult_fill["workclass"] = adult_fill["workclass"].fillna(
 > Arrow to the right labeled "fillna(mode)". Right: same table, the empty
 > cells now filled with the text "Private" highlighted yellow. Thai caption
 > "เติม = สร้างสมมติฐาน". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -126,6 +130,7 @@ coffee["altitude_m"] = (
 > Arrow right labeled "str.extract + astype(float)". Result: a column of
 > plain numbers 1450.0, 1000.0, 1200.0, 900.0. Thai caption "ข้อความ ->
 > ตัวเลข". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -148,6 +153,7 @@ vc[vc < 15]   # กลุ่มเล็ก ๆ ที่ซ่อนคนส�
 > labeled "value_counts()". Right: a horizontal bar chart of counts per
 > unique name, the near-duplicates' bars both small and circled in orange.
 > Thai caption "ค่าเดียวกันหรือคนละค่า?". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -171,6 +177,7 @@ coffee = coffee.drop_duplicates(subset=content_cols, keep="first")
 > right labeled "drop_duplicates(keep=first)". Right: 4-row table, one copy
 > kept (green), duplicates gone. Thai caption "เก็บไว้ 1 แถว". Minimal, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -193,6 +200,7 @@ long = data.melt(id_vars=data.columns[0],
 > animation-style sweep to the right labeled "melt()". Right: a tall narrow
 > 3-column table: Date | station | pm25, with many rows (same dates repeated,
 > one row per station). Thai caption "กว้าง -> ยาว". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -215,6 +223,7 @@ long["date"] = pd.to_datetime(
 > column of calendar icons with dates "2011-01-05", "2011-01-06", one cell
 > greyed with "NaT" and a small warning icon, "2011-01-08". Thai caption
 > "วันที่แปลก ไม่พัง แต่ถูกทำเครื่องหมาย". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -240,6 +249,7 @@ plt.show()
 > labeled "plot.barh()". Right: a horizontal bar chart with 3 bars of
 > different lengths, one bar much longer than the others, title text on top,
 > x-axis label below. Thai caption "สัดส่วนค่าหาย". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

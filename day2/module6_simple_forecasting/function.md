@@ -35,6 +35,7 @@ co2["ma12"] = co2["average"].rolling(12).mean()
 > averaged value; the window shown again shifted a few steps right with the
 > smooth line extended. Thai caption "หน้าต่างเลื่อน = เส้นเรียบ". Minimal,
 > rounded rectangles, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -58,6 +59,7 @@ trend = np.polyval([slope, intercept], co2["decimal"])
 > candidate fits; a callout card next to the best line showing "y = a + b*x"
 > with the slope term highlighted. Thai caption "เส้นตรงที่พอดีที่สุด".
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -82,6 +84,7 @@ air["month"] = pd.date_range("1949-01", periods=len(air), freq="MS")
 > panel: a single starting calendar icon with a dotted chain of evenly
 > spaced calendar icons extending right labeled "date_range, one per month".
 > Thai captions "ประกอบ" and "ออกแบบลำดับ". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -105,6 +108,7 @@ history = yearly.loc[2015:2019]           # ปี 2015 ถึง 2019 เท่
 > earlier positions; a second small panel showing a year column with rows
 > 2015 to 2019 highlighted as a selected block labeled "loc[2015:2019]".
 > Thai caption "ดันลง 12 แถว = ค่าปีก่อน". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -128,6 +132,7 @@ print(f"พลาดเฉลี่ย {mae:.1f} ppm")
 > bars to a summary card showing "MAE = เฉลี่ยความยาวแท่ง" with a single
 > representative bar length. Thai caption "พลาดเฉลี่ยกี่หน่วย". Minimal,
 > no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

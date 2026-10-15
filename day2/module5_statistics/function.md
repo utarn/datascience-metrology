@@ -34,6 +34,7 @@ penguins["body_mass_g"].describe()
 > Right: a compact summary card listing rows: count, mean, std, min, 25%,
 > 50%, 75%, max with small sample numbers. The 50% row highlighted yellow.
 > Minimal, rounded rectangles, Thai labels, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -59,6 +60,7 @@ print(f"mean = {sal.mean():,.0f}, median = {sal.median():,.0f}")
 > labeled "median" pointing to the dashed line at the middle person's head.
 > Thai caption "ค่าเฉลี่ยโดนลาก / ค่ากลางอยู่กับที่". Minimal, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -83,6 +85,7 @@ iqr = q3 - q1   # ช่วงกลาง 50% ของข้อมูล
 > end markers labeled "min" and "max". An arrow labeled "std" pointing from
 > the center dot outward to a mid-range dot. Thai caption "กลาง 50%".
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -104,6 +107,7 @@ penguins.loc[penguins["sex"] == "male", "body_mass_g"]
 > the top labeled "column (col)", converging to a small highlighted column
 > segment of just the two tinted rows. Thai caption "แถว + คอลัมน์
 > พร้อมกัน". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -130,6 +134,7 @@ plt.show()
 > overlapping histograms in coral and blue (alpha blending visible), each
 > single-peaked, with a small legend box. Thai caption "สองยอด =
 > กลุ่มซ่อนอยู่". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -153,6 +158,7 @@ penguins.groupby("species").agg(
 > "agg(median, std)". Right: same table with two new columns appended, the
 > new column headers highlighted: "median_g" and "std_g". Thai caption
 > "สถิติใหม่ ชุดเดิม". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

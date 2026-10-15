@@ -35,6 +35,7 @@ gap = pd.read_csv(DATA / "gapminder" / "gapminderDataFiveYear.csv")
 > grid table with highlighted header row. Thai caption "ไฟล์ข้อความ ->
 > ตารางที่คำนวณได้". Soft pastel colors, rounded rectangles, minimal, no
 > photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -59,6 +60,7 @@ gap.info()
 > "head()", a text badge "1704 x 6" labeled "shape", and a vertical list of
 > column summaries labeled "info()". Thai captions "แถวแรก" "มิติตาราง"
 > "ทุกคอลัมน์". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -83,6 +85,7 @@ gap["gdp_total"] = gap["gdpPercap"] * gap["pop"]
 > columns labeled 'df[["a","b"]]' to a small two-column table (DataFrame).
 > Below, an empty new column being filled by a formula arrow. Thai captions.
 > Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -108,6 +111,7 @@ rich = gap[(gap["year"] == 2007) & (gap["lifeExp"] > 75)]
 > mini-scene showing two conditions joined by "&" each wrapped in round
 > brackets. Thai caption "สวิตช์ต่อแถว — เปิดเท่านั้นที่ผ่าน". Minimal,
 > no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -128,6 +132,7 @@ rich_2007.sort_values("gdpPercap", ascending=False).head()
 > "sort_values(ascending=False)". Right: same table sorted descending, top
 > row highlighted as the maximum, with a small "1st" medal icon. Thai
 > caption "จัดอันดับในบรรทัดเดียว". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -151,6 +156,7 @@ gap_2007.groupby("continent").agg(
 > piles by group label, each pile through the same calculator machine,
 > results reassembled into a small summary table with group/count/mean
 > columns. Thai caption "แบ่งกลุ่ม คำนวณ รวมกลับ". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -171,6 +177,7 @@ coffee = pd.concat([arabica, robusta], ignore_index=True)
 > the left edge highlighted; a few grey empty cells in some columns circled
 > with a question mark. Thai caption "ต่อท้ายกัน แล้วเลขแถวใหม่". Minimal,
 > no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -192,6 +199,7 @@ back = pd.read_excel(xlsx)
 > green Excel file icon walking in through one door becoming a table, and a
 > table walking out the other door becoming an Excel file icon. Thai caption
 > "Excel เข้าออกประตูเดียวกับ CSV". Minimal, no photorealism.`
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
