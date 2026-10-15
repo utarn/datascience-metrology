@@ -37,6 +37,7 @@ moving average · วงรอบ) และกติกาเดียวที
 > highlighted; a rubber stamp icon in the corner suggesting "verify before
 > trusting"; flat vector style, white background, teal-coral-slate palette,
 > no text labels.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -58,6 +59,7 @@ moving average · วงรอบ) และกติกาเดียวที
 > 20% labeled as test zone where the line extends through and short vertical
 > error bars show gaps between line and actual dots; flat vector infographic,
 > white background, teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -79,6 +81,7 @@ moving average · วงรอบ) และกติกาเดียวที
 > cliff right below the dashed line, the gap between dashed line and the
 > cliff bottom shaded dark with a small globe-crack icon at the crash point;
 > flat vector infographic, white background, teal-coral-red palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -98,6 +101,7 @@ moving average · วงรอบ) และกติกาเดียวที
 > of last year's line being overlaid on this year's line, arrows showing the
 > copy step; a small clock icon floating beside the chart; flat vector
 > style, white background, teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

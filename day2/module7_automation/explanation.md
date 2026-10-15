@@ -39,6 +39,7 @@ figure ในส่วนที่ 5 ของ `exercise.ipynb` (ดูหัว
 > fifteen finished stacks at once with a stopwatch icon and a "for" loop
 > box in between; flat vector style, white background, teal-coral palette,
 > friendly.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -58,6 +59,7 @@ figure ในส่วนที่ 5 ของ `exercise.ipynb` (ดูหัว
 > each band folds into its own CSV file icon named after the group color
 > badge; three file icons aligned in a row; flat vector infographic, white
 > background, teal-coral-green palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -79,6 +81,7 @@ figure ในส่วนที่ 5 ของ `exercise.ipynb` (ดูหัว
 > an export command, the incoming lane labeled with a search-and-combine
 > command; small file icons walking on both lanes in opposite directions;
 > flat vector style, white background, teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

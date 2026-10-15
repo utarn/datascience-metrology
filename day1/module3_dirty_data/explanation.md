@@ -26,6 +26,7 @@ exercise ทำเอง 30 นาที → เฉลย + สรุป 10 น�
 > mark (fake values like "?"), a torn calendar page (malformed dates), and two identical
 > stacked rows (duplicates); flat vector style, white background, teal-coral-slate palette,
 > no text labels.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -45,6 +46,7 @@ exercise ทำเอง 30 นาที → เฉลย + สรุป 10 น�
 > box labeled "replace" to the same cell shown as an empty floating gray gap (NaN), then
 > arrow to a small horizontal bar chart showing missing-value percentages per column; flat
 > vector infographic, white background, teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -64,6 +66,7 @@ exercise ทำเอง 30 นาที → เฉลย + สรุป 10 น�
 > into a sieve/funnel labeled with a regex pattern; clean bare numbers fall through into a
 > measuring column while text fragments stay caught on top; flat vector style, white
 > background, teal-coral palette, friendly technical look.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -83,6 +86,7 @@ exercise ทำเอง 30 นาที → เฉลย + สรุป 10 น�
 > crisp Thai text after the door; second door labeled "melt" where a wide calendar-style
 > table pivots into a long two-column table; flat vector infographic, white background,
 > teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

@@ -33,6 +33,7 @@ JupyterLab ได้ก่อนพิธีใด ๆ (โมดูลนี้
 > screen, a clock, a measuring instrument — each emitting dotted trail lines
 > flowing into a central box labeled as data; flat vector style, white
 > background, teal-coral-slate palette, friendly, no photorealism.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -56,6 +57,7 @@ JupyterLab ได้ก่อนพิธีใด ๆ (โมดูลนี้
 > arrows to a single box labeled as a data table; small warning badge showing
 > a row limit in the corner; flat vector style, white background,
 > teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -79,6 +81,7 @@ JupyterLab ได้ก่อนพิธีใด ๆ (โมดูลนี้
 > road with a code editor icon continuing past many stacked files toward a
 > shared destination labeled as a report; flat vector style, white background,
 > teal-coral palette, encouraging tone.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -101,6 +104,7 @@ f-string → list → dict → for → if/def → Path ทุกขั้นค�
 > diamond, folder) and the final station larger and highlighted as the
 > terminus; flat vector style, white background, teal-coral palette, no
 > photorealism.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

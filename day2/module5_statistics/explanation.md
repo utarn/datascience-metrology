@@ -30,6 +30,7 @@ exercise ทำเอง 22 นาที → เฉลย + สรุป 8 น�
 > center dot labeled as central value, one shows a horizontal range band around
 > a center dot labeled as spread; flat vector style, white background,
 > teal-coral-slate palette, no text labels beyond the two cards.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -51,6 +52,7 @@ exercise ทำเอง 22 นาที → เฉลย + สรุป 8 น�
 > one labeled "mean" floating above all heads with an arrow pulled toward the
 > tall figure, one labeled "median" aligned with the middle figure's head;
 > flat vector style, white background, teal-coral palette, friendly.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -71,6 +73,7 @@ exercise ทำเอง 22 นาที → เฉลย + สรุป 8 น�
 > left panel has dots tightly clustered around the line, right panel has dots
 > widely scattered far above and below it; identical titles; flat vector
 > infographic, white background, teal-coral palette, minimal.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -92,6 +95,7 @@ exercise ทำเอง 22 นาที → เฉลย + สรุป 8 น�
 > question mark; bottom shows the same data split into two translucent
 > overlapping single-peak histograms in different colors; flat vector style,
 > white background, teal-coral palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 

@@ -34,6 +34,7 @@
 > line, a bell-shaped histogram; four small speech bubbles around the grid
 > each pointing to one cell; flat vector style, white background,
 > teal-coral-slate palette, no text labels.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -53,6 +54,7 @@
 > faint cluster regions visible, right the same points colored in three
 > distinct colors with each cluster circled and a small legend box; flat
 > vector infographic, white background, teal-coral-green palette.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -94,6 +96,7 @@ legend เมื่อหลายกลุ่ม · แกนซื่อสั
 > four empty label cards pointing to the title area, the x-axis, the y-axis,
 > and the legend box respectively; flat vector style, white background,
 > teal-coral palette, generous whitespace.
+> เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
 
 ---
 
@@ -152,3 +155,4 @@ legend เมื่อหลายกลุ่ม · แกนซื่อสั
 
 **บรรทัดปิด (พูดจบวัน):** "Python + ข้อมูลสะอาด + ภาพที่สื่อสาร = วัตถุดิบ
 ของทุกอย่างที่เหลือในคอร์สนี้ — พรุ่งนี้ 9:00 เจอกันที่สถิติ (M5)"
+เขียนคำอธิบายสั้นๆ ที่เข้าใจง่ายสำหรับแต่ละฟังก์ชัน พร้อมตัวอย่างการเรียกใช้ และอธิบายพารามิเตอร์ที่ใช้ในฟังก์ชันนั้น ๆ ให้ชัดเจน พร้อมคำอธิบายภาพประกอบ (image prompt) สำหรับสร้างภาพประกอบการสอนแบบ infographic style (flat vector, plain white background, muted colors, clean sans-serif labels, no photorealism, no 3D, no gradients)
