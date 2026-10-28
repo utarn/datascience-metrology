@@ -67,11 +67,18 @@ for species_name, color in colors.items():
 
 | ฟังก์ชัน | ทำอะไร |
 |---|---|
-| `.plot.bar(ax=...)` | วาดกราฟแท่งแนวตั้งจาก Series/ตารางสรุป — เปรียบเทียบกลุ่ม (ต่างจาก barh ที่ M3 สอน: เหมือนกันแค่หมุน 90°) |
+| `.plot.bar(ax=...)` | วาดกราฟแท่งแนวตั้งจาก Series/ตารางสรุป — เปรียบเทียบกลุ่ม (ถ้าตารางสรุปมีหลายคอลัมน์ เช่น min/mean/max จะวาดเป็นแท่งแบบกลุ่ม / Grouped Bar Chart ให้อัตโนมัติ) |
 
 ```python
+# แท่งเดี่ยว
 means = penguins.groupby("species")["body_mass_g"].mean()
 means.plot.bar(ax=ax)
+
+# แท่งแบบกลุ่ม (เปรียบเทียบ min, mean, max)
+stats = penguins.groupby("species")["body_mass_g"].agg(
+    min_mass="min", avg_mass="mean", max_mass="max"
+)
+stats.plot.bar(ax=ax)
 ```
 
 **ภาพ:** `figures/m4-g3-bar.png`
