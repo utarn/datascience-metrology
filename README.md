@@ -68,6 +68,8 @@ Metrology Research" 3 วัน** ([utarn/ml-metrology](https://github.com/utarn
 
 **Windows:** ดับเบิลคลิก `setup.ps1` (หรือคลิกขวา → Run with PowerShell) — ติดตั้งทุกอย่างให้อัตโนมัติ
 
+> **Windows ARM64** (Surface / Copilot+ PC / Snapdragon): `setup.ps1` จะติดตั้ง Python x86_64 ให้อัตโนมัติ เพราะ pyarrow ไม่มี wheel สำหรับ ARM64 — ดูรายละเอียดใน `PYTHON.md` ข้อ 5
+
 **macOS / มี `uv` อยู่แล้ว:**
 
 ```bash

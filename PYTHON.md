@@ -56,7 +56,41 @@ python -m venv .venv
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
-## 5. ทางเลือก: ใช้ uv จัดการ environment
+## 5. Windows ARM64 (Surface / Copilot+ PC / Snapdragon)
+
+`pyarrow` — dependency ที่ pandas 3 ต้องใช้ — **ไม่มี wheel สำหรับ `win_arm64`** (ตรวจแล้วทุกเวอร์ชัน 15–25) ทำให้ `uv sync` บน Python ARM64 พยายาม compile จาก source แล้วพังที่ MSBuild ARM64
+
+ทางแก้ที่แนะนำ: ใช้ Python **x86_64** (รันผ่าน emulation ของ Windows on ARM) เพราะทุกแพ็กเกจในคอร์สมี wheel `win_amd64` ครบ
+
+```powershell
+# ต้องใช้ uv >= 0.12.23 (setup.ps1 จัดการให้แล้ว)
+$env:UV_PYTHON_ARCH = "x86_64"
+uv python install cpython-3.14-windows-x86_64
+uv sync --python cpython-3.14-windows-x86_64
+```
+
+ตรวจสอบว่าได้ interpreter x86_64
+
+```powershell
+uv run python -c "import platform; print(platform.machine())"   # ต้องขึ้น AMD64
+```
+
+ข้อควรระวัง
+
+- อย่ารัน `uv python install 3.14` เฉย ๆ บน ARM64 — uv 0.13+ จะเลือก native ARM64 ให้
+- ถ้าติดตั้ง Python เองด้วย winget หรือ python.org ให้เลือกตัวติดตั้ง **x86_64** ไม่ใช่ ARM64
+- ถ้ามี `.venv` เดิมที่สร้างด้วย Python ARM64 อยู่แล้ว `uv sync --python cpython-3.14-windows-x86_64` จะสร้าง environment ใหม่ให้ หรือลบ `.venv` ก่อนก็ได้
+- ถ้าลบ `.venv` แล้วรัน `uv sync` ใหม่ในอนาคต ให้ตั้ง `UV_PYTHON_ARCH` ทุก session หรือตั้งถาวรครั้งเดียว
+
+  ```powershell
+  [Environment]::SetEnvironmentVariable("UV_PYTHON_ARCH", "x86_64", "User")
+  ```
+
+ทางเลือก: ใช้ WSL2 (Ubuntu) — pyarrow มี wheel `manylinux aarch64` ครบ แต่ setup.ps1 ข้างต้นเป็นทางที่เบาที่สุด
+
+> รันแบบ x86_64 บน ARM64 จะช้ากว่าเล็กน้อย แต่เพียงพอสำหรับคอร์ส CPU-only นี้
+
+## 6. ทางเลือก: ใช้ uv จัดการ environment
 
 ```powershell
 # สร้าง venv ด้วย Python 3.14
@@ -74,7 +108,7 @@ uv pip install -r requirements-offline.txt
 powershell -ExecutionPolicy ByPass -File .\setup.ps1
 ```
 
-## 6. ติดตั้ง VS Code Extensions (รายการเดียวกับเครื่องนี้)
+## 7. ติดตั้ง VS Code Extensions (รายการเดียวกับเครื่องนี้)
 
 ```powershell
 code --install-extension ms-python.python
@@ -119,7 +153,7 @@ $extensions | ForEach-Object { code --install-extension $_ }
 code --list-extensions | Select-String -Pattern "python|jupyter"
 ```
 
-## 7. เลือก Interpreter ใน VS Code
+## 8. เลือก Interpreter ใน VS Code
 
 `Ctrl+Shift+P` → `Python: Select Interpreter` → เลือก `.\.venv\Scripts\python.exe`
 
